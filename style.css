@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 9%;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 32px;
+    color: #9b5f3d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a {
+    font-size: 18px;
+    color: white;
+    margin-left: 35px;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #9b5f3d;
+    border-bottom: 3px solid #9b5f3d;
+}
+
+section {
+    min-height: 100vh;
+    padding: 100px 9% 50px;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.home-img img {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid #9b5f3d;
+    box-shadow: 0 0 35px #9b5f3d;
+}
+
+.home-content h1 {
+    font-size: 58px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 38px;
+    margin: 12px 0;
+}
+
+span {
+    color: #9b5f3d;
+}
+
+.home-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+    color: #dddddd;
+}
+
+.social-icons {
+    margin: 30px 0;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 48px;
+    height: 48px;
+    padding: 0 10px;
+    border: 2px solid #9b5f3d;
+    border-radius: 50%;
+    color: #9b5f3d;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 12px;
+    transition: 0.3s;
+    font-size: 13px;
+}
+
+.social-icons a:hover {
+    background-color: #9b5f3d;
+    color: black;
+    box-shadow: 0 0 20px #9b5f3d;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 35px;
+    border: 2px solid #9b5f3d;
+    border-radius: 30px;
+    color: #9b5f3d;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #9b5f3d;
+    color: black;
+    box-shadow: 0 0 25px #9b5f3d;
+}
+
+.section {
+    background-color: #050505;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 42px;
+    color: #9b5f3d;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.card,
+.info-box,
+.project {
+    background-color: #111111;
+    border: 1px solid #9b5f3d;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(155, 95, 61, 0.4);
+}
+
+.card {
+    width: 33%;
+}
+
+.card h3,
+.info-box h3,
+.project h3 {
+    color: #9b5f3d;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.card p,
+.info-box p,
+.project p {
+    color: #dddddd;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+}
+
+.skills-box span {
+    border: 2px solid #9b5f3d;
+    border-radius: 25px;
+    padding: 12px 22px;
+    font-weight: bold;
+    color: #9b5f3d;
+    transition: 0.3s;
+}
+
+.skills-box span:hover {
+    background-color: #9b5f3d;
+    color: black;
+}
+
+.info-box {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.info-box p {
+    margin-bottom: 12px;
+}
+
+.project {
+    margin-bottom: 25px;
+}
+
+.project a,
+.info-box a {
+    color: #9b5f3d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project a:hover,
+.info-box a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #000000;
+    color: #9b5f3d;
+    border-top: 1px solid #9b5f3d;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+    header {
+        padding: 20px 5%;
+        display: block;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+        font-size: 15px;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .home-img img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .home-content h1 {
+        font-size: 38px;
+    }
+
+    .home-content h3 {
+        font-size: 26px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
